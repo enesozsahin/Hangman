@@ -1,0 +1,36 @@
+Code: WordList.py
+
+This code is a Python script that generates a list of English words. The list contains approximately 1000 words and is stored in the "words" variable as a string, with each word separated by a new line.
+
+The script generates a list of English words, which can be useful for various language processing tasks.
+
+The words are stored in the "words" variable as a string, with each word separated by a new line. This makes it easier to access each word individually, but harder to perform operations on the list as a whole.
+
+The list contains approximately 1000 words, which is a relatively small number compared to the size of the English language. This could limit the usefulness of the list in certain applications.
+
+The words are in alphabetical order, which makes it easier to locate specific words in the list.
+
+Overall, the WordList.py script generates a simple list of English words that could be used as a starting point for various language processing tasks.
+
+
+Code: hangman_art.py
+
+This is the code for an ASCII art representation of the Hangman game and its logo. The stages array contains the 7 stages of the hangman, each represented as an ASCII art string. The logo is an ASCII art string that represents the logo of the game. The Info string provides information about the rules of the game.
+
+
+Code: main.py
+
+This is the main script of a hangman game in python. It imports the list of words from "WordList.py" and the ASCII art for hangman from "hangman_art.py". The script starts by printing the logo and info about the game. Then it randomly selects a word from the word list.
+
+A list of underscores is created to represent the letters of the word that needs to be guessed. The player is given 6 lives (guesses) to guess the word. The player is prompted to guess a letter and their input is checked if it is a single letter. If it's not, the player is asked to enter a single letter.
+
+The game logic is as follows:
+
+If the player's guess is not in the word and not in the list of previous guesses, a life is lost, and the hangman ASCII art is updated accordingly.
+If the player's guess is in the previous guesses, they are informed that they already used that letter.
+If the player's guess is in the word, the corresponding underscores are updated with the correct letter.
+If the player correctly guesses all the letters in the word, they win the game.
+If the player runs out of lives, the game is over, and the player loses.
+The script prints the word with underscores for the unguessed letters and the used letters after each turn. The game continues until either the player wins or loses.
+
+Brainnest Group C5
